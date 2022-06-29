@@ -1,0 +1,28 @@
+﻿@section css {
+        <link href="@Url.Content("~/css/LandingPage1.css")" rel="stylesheet"/>
+}
+@{
+    //Short C# goes here
+}
+<!--TO DO: 2 CONTAINERS
+    1. Container holding both the sign in window and logo image
+    2. 2nd container contains username, password, loginbtn, and create btn
+    THEY DO NOTHING, THEY ARE PLACEHOLDERS 
+-->
+<!--1st Container-->
+<div class="container" id="loginWindowContainer">
+    <div class="container" id="loginLogoContainer">
+        <img src="~/Files/Images/drawing.svg" id="loginLogo" alt="PickUp Events Image"/>
+    </div>
+    <div class="container" id="loginDetailsContainer">
+        <p id="loginHeader">Log into PickUp Events</p>
+        <div class="form-group" id="loginForm">
+            <input type="text" class="form-control" id="loginFormUsernameInput" placeholder="E-mail or phone number">
+            <input type="text" class="form-control" id="loginFormPasswordInput" placeholder="Password">
+            <button type="submit" id="signInBtn" class="btn btn-primary"><text id="signInTxt">Sign in</text></button>
+            <a href="#" class="link-info" id="forgotPasswordLink">Forgot Password?</a>
+            <p id="orTxt">or</p>
+            <button type="submit" id="createNewAccBtn" class="btn btn-success"><text id="createNewTxt">Create new account</text></button>
+        </div>
+    </div>
+</div>

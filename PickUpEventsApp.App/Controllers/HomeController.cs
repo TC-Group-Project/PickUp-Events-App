@@ -23,6 +23,18 @@ namespace PickUpEventsApp.App.Controllers
             return View();
         }
 
+        //Simple landing pages with one simulating a sign on screen
+        public IActionResult LandingPage1()
+        {
+            return View();
+        }
+
+        //Second simple landing page
+        public IActionResult LandingPage2()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
